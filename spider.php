@@ -35,8 +35,8 @@ $history=[$start.$query];
 $nextRes=[];
 $from="google";
 $iterations=0;
-system('stty cbreak');
-$stdin=fopen('php://input','r');
+//system('stty cbreak');
+//$stdin=fopen('php://input','r');
 do{
 	$iterations++;
 	echo "Analysing document...\n";
