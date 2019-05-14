@@ -28,15 +28,13 @@ function getCurl($url){
 }
 
 $res=getCurl($start.$query);
-file_put_contents("../startingpoint.html",$res);
+// file_put_contents("../startingpoint.html",$res);
 
 $linksN=0;
 $history=[$start.$query];
 $nextRes=[];
 $from="google";
 $iterations=0;
-//system('stty cbreak');
-//$stdin=fopen('php://input','r');
 do{
 	$iterations++;
 	echo "Analysing document...\n";
