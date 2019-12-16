@@ -2,6 +2,7 @@
 $argc = count($argv);
 if($argc<2 || $argc>3){
 	echo "Usage: php ".$argv[0]." URL FILE\nURL must have protocol (http or https)\nFILE must be a list of urls to be added to the url (like /index.html)\n";
+	exit();
 }
 
 function getStatus($url){
