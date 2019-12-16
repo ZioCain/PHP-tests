@@ -1,6 +1,6 @@
 <?php
 $argc = count($argv);
-if($argc<3 || $argc>=4){
+if($argc<3 || $argc>4){
 	echo "\n\tcsv column extractor\n\n\tusage: php ".$argv[0]." FILE.csv <columns> [separator=;]\n\nColumns patterns:".
 	"\n1\tSingle number, this will extract just one single column".
 	"\n1,2,..\tList of numbers, this will extract specified columns".
