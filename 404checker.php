@@ -13,6 +13,9 @@ function getStatus($url){
 	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 	curl_setopt($ch, CURLOPT_TIMEOUT, 60);
 	curl_setopt($ch, CURLOPT_MAXREDIRS, 5);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+//	curl_setopt($ch, CURLOPT_CAINFO, "/Users/michelecastelletti/Documents/cacert.pem");
 	curl_exec($ch);
 	$error = curl_errno($ch);
 	if($error) echo "CURL ERROR: ".$error."\n\n";
