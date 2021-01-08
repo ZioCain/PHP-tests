@@ -4,3 +4,4 @@ new-images
 not-analyzed
 *.csv
 .DS_Store
+good.lst
